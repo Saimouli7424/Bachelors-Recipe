@@ -567,7 +567,7 @@
         Once done, add the cooked chicken curry into the Gongura masala and saute on high heat for another 2 minutes and turn off the heat.
         Check the salt and spices and adjust according to taste. Transfer the Gongura Chicken Curry to a serving bowl and serve hot.
         Serve Gongura Chicken Curry with Ghee Rice Recipe | Neychoru , Tomato Onion Cucumber Raita Recipe and a Semiya Payasam for a delicious weekend lunch.
-        source: https://www.archanaskitchen.com/gongura-chicken-curry-recipe-andhra-style-gongura-chicken`,
+        source: `https://www.archanaskitchen.com/gongura-chicken-curry-recipe-andhra-style-gongura-chicken`,
         "email": "recipeemail@monsterz.co.in",
         "ingredients": [
         "500 gram Chicken",
