@@ -101,7 +101,7 @@ exports.searchRecipe = async(req, res) => {
 */
 exports.exploreLatest = async(req, res) => {
   try {
-    const limitNumber = 20;
+    const limitNumber = 10;
     const recipe = await Recipe.find({}).sort({ _id: -1 }).limit(limitNumber);
     res.render('explore-latest', { title: 'Cooking Blog - Explore Latest', recipe } );
   } catch (error) {

@@ -16,8 +16,16 @@
   
       <div class="col-12 col-md-8">
         <div class="row">
-          <div class="col-12"><h1><%- recipe.name %></h1></div>
-          <div class="col-12 mb-4"><i class="bi bi-tag"></i> <%- recipe.category %></div>
+          <!-- Recipe Name and Share Button Side by Side -->
+          <div class="col-8">
+            <h1><%- recipe.name %></h1>
+          </div>
+          <div class="col-4 d-flex justify-content-end">
+              <img onclick="shareUrl()" src="/img/share-removebg-preview.png" alt="Share" style="height: 50px; width: 50px;">
+          </div>
+          <!-- End Recipe Name and Share Button -->
+
+          <div class="col-12 mb-3"><i class="bi bi-tag"></i> <%- recipe.category %></div>
           <div class="col-12" style="white-space: pre-line;">
             <h4>Cooking Instructions</h4>
             <%- recipe.description %>
@@ -36,6 +44,19 @@
         </div>
       </div>
     </div>
+
   <% } else { %>
     <p>No item found.</p>
   <% } %>
+
+  <!-- JavaScript for Share Button -->
+<script>
+  function shareUrl() {
+    var url = window.location.href;
+    navigator.clipboard.writeText(url).then(function() {
+      alert('Recipe URL copied to clipboard!');
+    }, function(err) {
+      console.error('Failed to copy recipe URL: ', err);
+    });
+  }
+  </script>
