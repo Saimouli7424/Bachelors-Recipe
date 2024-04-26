@@ -74,7 +74,7 @@ exports.exploreRecipe = async(req, res) => {
       const recipe = await Recipe.findById(recipeId);
       res.render('recipe', { title: 'Cooking Blog - Recipe', recipe } );
     } catch (error) {
-      res.satus(500).send({message: error.message || "Error Occured" });
+      res.status(500).send({message: error.message || "Error Occured" });
     }
   } 
 
