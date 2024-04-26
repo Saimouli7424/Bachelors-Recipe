@@ -14,7 +14,7 @@ router.get('/explore-latest', recipeController.exploreLatest);
 router.get('/explore-random', recipeController.exploreRandom);
 router.get('/submit-recipe', recipeController.submitRecipe);
 router.post('/submit-recipe', recipeController.submitRecipeOnPost);
-router.get('/contact',recipeController.exploreContact);
+router.get('/Contact',recipeController.exploreContact);
 router.get('/about',recipeController.exploreAbout);
 
 module.exports = router;
